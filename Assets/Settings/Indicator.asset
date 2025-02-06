@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1f3d7a623ad477d857fb2e28b21a585, type: 3}
+  m_Name: Indicator
+  m_EditorClassIdentifier: 
+  <Settings>k__BackingField:
+  - Mult: 1
+    Text: Not bad!
+    Clip: {fileID: 7400000, guid: e5b2fd35c475ec1488a11d33f7f5e4ac, type: 2}
+  - Mult: 3
+    Text: Some fun!
+    Clip: {fileID: 7400000, guid: 2d1ea3ec946097e46a166a90cb0cf370, type: 2}
+  - Mult: 5
+    Text: So cool!
+    Clip: {fileID: 7400000, guid: 14d08d576a744b940954a753df1c9e3a, type: 2}
+  - Mult: 6.5
+    Text: it's very nice!
+    Clip: {fileID: 7400000, guid: 491d091871bdd734bb76f32dbf36a5fa, type: 2}
+  - Mult: 8
+    Text: Greate destroy!
+    Clip: {fileID: 7400000, guid: ff169e4dac59504409ace3f8701434e0, type: 2}
+  - Mult: 10
+    Text: CARNAGE!!!
+    Clip: {fileID: 7400000, guid: 80b95a4e2b34b8a4ea91e03c7c4b8bad, type: 2}
