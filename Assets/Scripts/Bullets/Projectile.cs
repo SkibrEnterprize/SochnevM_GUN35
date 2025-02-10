@@ -25,7 +25,7 @@ namespace Tanks
 		//Задержка перед автодетонацией
 		private float _delay;
 		//Физтело снаряда
-		private Rigidbody _body;
+		public Rigidbody _body;
 
 		[Tooltip("Радиус поражающей зоны")]
 		[SerializeField, Min(0.1f)]
@@ -35,7 +35,8 @@ namespace Tanks
 		private float _explosionForce = 5f;
 		[Tooltip("Макимальное время жизни снаряда при выстреле")]
 		[SerializeField, Min(1f)]
-		private float _lifeTime = 7f;
+		private float _lifeTime = 7f;		
+
 
 		/// <summary>
 		/// Оповещение о поражении окружения
@@ -50,16 +51,51 @@ namespace Tanks
 			get => _body.velocity;
 			set => _body.velocity = value;
 		}
+
+		public Vector3 Position
+		{
+			get => _body.transform.position;
+			set => _body.transform.position = value;
+		}
 		
 		private void Awake()
 		{
 			_body = GetComponent<Rigidbody>();
 			_mask = LayerMask.GetMask(_layerNames);
-		}
+            
+        }
 
 		private void OnEnable()
-			//Активация таймера при пересоздании снаряда
-			=> _delay = _lifeTime;
+		{          
+           
+            //Активация таймера при пересоздании снаряда
+            _delay = _lifeTime;          
+
+
+        }
+
+		private void OnDisable()
+		{
+			_body.position = Vector3.zero;
+			_body.rotation = Quaternion.identity;
+			_body.velocity = Vector3.zero;
+			_body.angularVelocity = Vector3.zero;
+			transform.position = Vector3.zero;
+          
+
+        }
+
+		public void SetPosition(Transform pos)
+		{
+			transform.position = pos.position;
+			transform.forward = pos.forward;
+			_body.position = pos.position;
+		}
+
+		public void AddForce(float velocity)
+		{
+			_body.velocity = transform.forward * velocity;
+		}
 
 		private void Update()
 		{

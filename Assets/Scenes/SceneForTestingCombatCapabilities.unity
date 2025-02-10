@@ -1223,6 +1223,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4478341443067209865, guid: 4f497ba3fcaf2cb419c3489bf8b3ff1e, type: 3}
+      propertyPath: _prefab
+      value: 
+      objectReference: {fileID: 1974020232035481299, guid: d9f82999a3e1c4d48aa2914b7a678605, type: 3}
     - target: {fileID: 4478341443263058754, guid: 4f497ba3fcaf2cb419c3489bf8b3ff1e, type: 3}
       propertyPath: m_Name
       value: Installer
@@ -1403,25 +1407,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1684504330}
     m_Modifications:
-    - target: {fileID: 661470546319278086, guid: 2c11221592ce48b428c1f186ce580ee0, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1570525390124071990, guid: 2c11221592ce48b428c1f186ce580ee0, type: 3}
       propertyPath: m_Name
       value: Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 2212564520576062987, guid: 2c11221592ce48b428c1f186ce580ee0, type: 3}
-      propertyPath: m_text
-      value: message
-      objectReference: {fileID: 0}
-    - target: {fileID: 2212564520576062987, guid: 2c11221592ce48b428c1f186ce580ee0, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 3012130174697903967, guid: 2c11221592ce48b428c1f186ce580ee0, type: 3}
-      propertyPath: _switchIndicatorVolume
-      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6470164466142775325, guid: 2c11221592ce48b428c1f186ce580ee0, type: 3}
       propertyPath: m_Pivot.x
@@ -1501,18 +1489,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6470164466142775325, guid: 2c11221592ce48b428c1f186ce580ee0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8015369208848000702, guid: 2c11221592ce48b428c1f186ce580ee0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0.14000002
-      objectReference: {fileID: 0}
-    - target: {fileID: 8694094642216556761, guid: 2c11221592ce48b428c1f186ce580ee0, type: 3}
-      propertyPath: m_Volume
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 8694094642216556761, guid: 2c11221592ce48b428c1f186ce580ee0, type: 3}
-      propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
